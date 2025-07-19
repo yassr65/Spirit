@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>رفع مود أو سيد</title>
+  <style>
+    body { font-family: Arial; background: #ffffff; padding: 20px; }
+    header { background: #2ecc71; color: white; padding: 15px; text-align: center; }
+    form { max-width: 400px; margin: auto; display: flex; flex-direction: column; gap: 10px; }
+    input, textarea { padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+    button { background: #2ecc71; color: white; padding: 10px; border: none; border-radius: 5px; }
+    .back { margin-top: 20px; text-align: center; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>رفع مود أو سيد</h1>
+  </header>
+
+  <form action="#" method="post" enctype="multipart/form-data">
+    <label>الاسم:</label>
+    <input type="text" name="name" required>
+
+    <label>الوصف:</label>
+    <textarea name="description" rows="4" required></textarea>
+
+    <label>نوع الملف:</label>
+    <select name="type">
+      <option value="mod">مود</option>
+      <option value="seed">سيد</option>
+    </select>
+
+    <label>رفع ملف:</label>
+    <input type="file" name="file" required>
+
+    <button type="submit">إرسال</button>
+  </form>
+
+  <div class="back">
+    <a href="index.html">⬅ العودة للرئيسية</a>
+  </div>
+</body>
+</html>
